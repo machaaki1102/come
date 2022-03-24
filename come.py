@@ -9,7 +9,7 @@ st.header('circle counter')
 st.write('内容：こちらに画像を貼り付ける事で、画像内の粒の数を数えます。')
 #src = st.file_uploader('写真貼り付け場所')
 #1なら出来る
-src = 'out_sample2.jpg'
+#src = 'out_sample2.jpg'
 st.write(type(src))
 #src = '/content/drive/MyDrive/Colab Notebooks/making/rice_conunt/mugi.jpg'
 #
