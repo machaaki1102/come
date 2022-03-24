@@ -6,7 +6,8 @@ import numpy as np
 #from google.colab.patches import cv2_imshow
 
 st.header('circle counter')
-src = st.file_uploader('画像内の米粒をカウントして表示します。')
+st.write('内容：こちらに画像を貼り付ける事で、画像内の粒の数を数えます。')
+src = st.file_uploader('写真貼り付け場所')
 #1なら出来る
 #src = 'out_sample2.jpg'
 #src = '/content/drive/MyDrive/Colab Notebooks/making/rice_conunt/mugi.jpg'
@@ -48,4 +49,4 @@ def cell(src):
 if src:
     cell()
 else:
-    st.write('こちらに表示予定')
+    st.write('添付後、こちらに画像と数を表示します。')
