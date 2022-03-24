@@ -41,5 +41,5 @@ for label in labels[2:]:  # 0:背景ラベル １：境界ラベル は無視す
 
 # 輪郭を描画する。
 cv2.drawContours(img, coins, -1, color=(0, 0, 255), thickness=2)
-cv2_imshow(img)
-print(len(coins))
+st.image(img)
+st.write(len(coins))
