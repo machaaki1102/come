@@ -4,7 +4,9 @@ import cv2
 import numpy as np
 #import matplotlib.pyplot as plt
 #from google.colab.patches import cv2_imshow
-#
+
+st.title('粒カウンター')
+st.file_uploader('粒を貼り付け')
 #1なら出来る
 src = 'out_sample2.jpg'
 #src = '/content/drive/MyDrive/Colab Notebooks/making/rice_conunt/mugi.jpg'
