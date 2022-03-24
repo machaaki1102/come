@@ -6,7 +6,7 @@ import numpy as np
 #from google.colab.patches import cv2_imshow
 
 st.header('circle counter')
-st.file_uploader('')
+st.file_uploader('画像内の米粒をカウントして表示します')
 #1なら出来る
 src = 'out_sample2.jpg'
 #src = '/content/drive/MyDrive/Colab Notebooks/making/rice_conunt/mugi.jpg'
@@ -44,4 +44,5 @@ for label in labels[2:]:  # 0:背景ラベル １：境界ラベル は無視す
 # 輪郭を描画する。
 cv2.drawContours(img, coins, -1, color=(0, 0, 255), thickness=2)
 st.image(img)
-st.write(len(coins))
+con = len(coins)
+st.write(f'粒数は、{con}です。')
