@@ -45,4 +45,7 @@ def cell(src):
     con = len(coins)
     st.write(f'粒数は、{con}です。')
 
-cell()
+if src:
+    cell()
+else:
+    st.write('こちらに表示予定')
