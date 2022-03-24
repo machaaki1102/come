@@ -47,6 +47,6 @@ def cell(src):
     st.write(f'粒数は、{con}です。')
 
 if src:
-    cell()
+    cell(src)
 else:
     st.write('添付後、こちらに画像と数を表示します。')
