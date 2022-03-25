@@ -12,9 +12,9 @@ st.write('内容：こちらに画像を貼り付ける事で、画像内の粒�
 src = st.file_uploader('写真貼り付け場所')
 
 file = os.path.abspath(src.name)
-print(file)
+st.write(file)
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
-
+#
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
