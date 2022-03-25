@@ -14,7 +14,7 @@ st.write(os.getcwd())
 st.write(src.name)
 st.write(type(src))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
-
+src.name = 'hhh.jpg'
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
