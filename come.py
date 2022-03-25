@@ -14,7 +14,7 @@ st.write(os.getcwd())
 st.write(src.name)
 st.write(type(src))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
-src.name = 'hhh.jpg'
+
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
@@ -25,7 +25,7 @@ src.name = 'hhh.jpg'
 
 #st.image(img_array)
 if src:
-    img = cv2.imread(hhh.jpg) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
+    img = cv2.imread(src.name) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
     st.write(src.name)
     st.write(type(img))
     img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
