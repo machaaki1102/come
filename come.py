@@ -3,7 +3,8 @@ import pandas as pd
 import cv2
 import numpy as np
 import os
-from PIL import Image 
+from PIL import Image
+import time
 #import matplotlib.pyplot as plt
 #from google.colab.patches import cv2_imshow
 
