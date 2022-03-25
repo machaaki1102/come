@@ -15,7 +15,7 @@ src = st.file_uploader('写真貼り付け場所')
 #path = os.path.join('/app/come/',src.name)
 #st.write(src.name)
 #st.write(path)
-#st.write(type(src))
+st.write(type(src))
 #src = '/content/drive/MyDrive/Colab Notebooks/making/rice_conunt/mugi.jpg'
 #
 img = cv2.imread(src.name) #第一引数は、ファイルパス
