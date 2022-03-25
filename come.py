@@ -3,6 +3,7 @@ import pandas as pd
 import cv2
 import numpy as np
 import os
+from PIL import Image 
 #import matplotlib.pyplot as plt
 #from google.colab.patches import cv2_imshow
 
@@ -10,6 +11,7 @@ st.header('circle counter')
 st.write('内容：こちらに画像を貼り付ける事で、画像内の粒の数を数えます。')
 src = st.file_uploader('写真貼り付け場所')
 
+(src)
 #st.write(type(src))
 img = cv2.imread(src.name) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
