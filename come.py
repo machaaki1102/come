@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import cv2
 import numpy as np
+import os
 #import matplotlib.pyplot as plt
 #from google.colab.patches import cv2_imshow
 
@@ -10,7 +11,10 @@ st.write('内容：こちらに画像を貼り付ける事で、画像内の粒�
 src = st.file_uploader('写真貼り付け場所')
 #1なら出来る
 #src = 'out_sample2.jpg'
-st.write(src.falename) 
+st.write(os.getcwd())
+path = os.path.join('come/app/',src.name)
+st.write(src.name)
+st.write(path)
 st.write(type(src))
 #src = '/content/drive/MyDrive/Colab Notebooks/making/rice_conunt/mugi.jpg'
 #
