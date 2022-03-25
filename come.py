@@ -12,7 +12,7 @@ src = st.file_uploader('写真貼り付け場所')
 #1なら出来る
 #src = 'out_sample2.jpg'
 st.write(os.getcwd())
-path = os.path.join('come/app/',src.name)
+path = os.path.join('/app/come/',src.name)
 st.write(src.name)
 st.write(path)
 st.write(type(src))
