@@ -53,7 +53,7 @@ for label in labels[2:]:  # 0:背景ラベル １：境界ラベル は無視す
     )
     coins.append(contours[0])
 # 輪郭を描画する。
-cv2.drawContours(img, coins, -1, color=(0, 0, 255), thickness=2)
+cv2.drawContours(img2, coins, -1, color=(0, 0, 255), thickness=2)
 st.image(img2)
 con = len(coins)
 st.write(f'粒数は、{con}です。')
