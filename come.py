@@ -22,7 +22,7 @@ st.write(file)
 #img_array = np.array(im)
 #st.write(type(img_array))
 #<class 'numpy.ndarray'>
-
+time.sleep(5)
 #st.image(img_array)
 if src:
     img = cv2.imread(src.name) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
