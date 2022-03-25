@@ -11,14 +11,14 @@ st.write('内容：こちらに画像を貼り付ける事で、画像内の粒�
 src = st.file_uploader('写真貼り付け場所')
 #1なら出来る
 #src = 'out_sample2.jpg'
-st.write(os.getcwd())
+#st.write(os.getcwd())
 path = os.path.join('/app/come/',src.name)
-st.write(src.name)
-st.write(path)
-st.write(type(src))
+#st.write(src.name)
+#st.write(path)
+#st.write(type(src))
 #src = '/content/drive/MyDrive/Colab Notebooks/making/rice_conunt/mugi.jpg'
 #
-img = cv2.imread(src) #第一引数は、ファイルパス
+img = cv2.imread(path) #第一引数は、ファイルパス
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ret, bin_img = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(5,5))
