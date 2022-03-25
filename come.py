@@ -22,7 +22,7 @@ st.write(type(img_array))
 st.image(img_array)
 
 img = cv2.imread(src.name) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
-st.image(img)
+st.image(cv2.cvtColor(img,cv2.COLOR_BGR2RGB))
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ret, bin_img = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(5,5))
