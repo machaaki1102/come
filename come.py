@@ -26,6 +26,7 @@ st.write(type(src))
 #st.image(img_array)
 if src:
     img = cv2.imread(src.name) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
+    st.write(src.name)
     st.write(type(img))
     img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
