@@ -18,6 +18,8 @@ im =Image.open(src)
 st.write(type(im))
 img_array = np.array(im)
 st.write(type(img_array))
+#<class 'numpy.ndarray'>
+st.image(img_array)
 
 img = cv2.imread(src.name) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
