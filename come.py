@@ -10,12 +10,14 @@ from PIL import Image
 st.header('circle counter')
 st.write('内容：こちらに画像を貼り付ける事で、画像内の粒の数を数えます。')
 src = st.file_uploader('写真貼り付け場所')
-#今のところuploderファイル
-st.write(type(src))
 
+st.write(type(src))
+#<class 'streamlit.uploaded_file_manager.UploadedFile'>
 im =Image.open(src)
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
 st.write(type(im))
+img_array = np.array(im)
+st.write(type(img_array))
 
 img = cv2.imread(src.name) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
