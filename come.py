@@ -17,7 +17,7 @@ st.write(file)
 
 st.write(type(file))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
-st.write(os.path.isdir(app/come))
+st.write(os.path.isdir(/app/come))
 
 
 #im =Image.open(src)
