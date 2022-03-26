@@ -14,7 +14,7 @@ src = st.file_uploader('写真貼り付け場所')
 
 file = os.path.abspath(src.name)
 st.write(file)
-sr.write(src.name)
+st.write(src.name)
 st.write(type(file))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
 st.write(os.path.exists(src.name))
