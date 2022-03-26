@@ -11,7 +11,7 @@ import time
 st.header('circle counter')
 st.write('内容：こちらに画像を貼り付ける事で、画像内の粒の数を数えます。')
 src = st.file_uploader('写真貼り付け場所')
-
+time.sleep(5)
 file = os.path.abspath(src.name)
 st.write(file)
 st.write(src.name)
