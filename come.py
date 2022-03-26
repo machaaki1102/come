@@ -14,6 +14,8 @@ src = st.file_uploader('写真貼り付け場所')
 
 file = os.path.abspath(src.name)
 st.write(file)
+
+st.write(type(file))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
 #
 #im =Image.open(src)
@@ -23,7 +25,6 @@ st.write(file)
 #img_array = np.array(im)
 #st.write(type(img_array))
 #<class 'numpy.ndarray'>
-time.sleep(5)
 #st.image(img_array)
 if src:
     img = cv2.imread(file) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
