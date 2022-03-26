@@ -17,7 +17,7 @@ st.write(file)
 
 st.write(type(file))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
-#
+
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
@@ -28,7 +28,7 @@ st.write(type(file))
 #st.image(img_array)
 if src:
     img = cv2.imread(file) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
-    st.image(img)
+    st.image(type(img))
     img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
     ret, bin_img = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
