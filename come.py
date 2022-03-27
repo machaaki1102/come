@@ -50,7 +50,7 @@ if src:
     merkers += 1
     merkers[unknown == 255] = 0
 # watershed アルゴリズムを適用する。
-    merkers = cv2.watershed(img2, merkers)
+    merkers = cv2.watershed(img, merkers)
     labels = np.unique(merkers)
 
     coins = []
