@@ -20,7 +20,7 @@ st.write(type(file))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
 st.write(os.path.exists(src.name))
 
-im = Image.open(src).read()
+im = Image.open(src)
 st.write(im)
 #output = io.BytesIO()
 #im.save(output,format='JPG')
