@@ -30,7 +30,7 @@ st.write(im)
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
 
 img = np.array(im)
-st.write(type(img_array))
+st.write(type(img))
 #<class 'numpy.ndarray'>
 #st.image(img_array)
 if src:
