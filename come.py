@@ -29,7 +29,7 @@ st.write(im)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
 
-img_array = np.array(im)
+img = np.array(im)
 st.write(type(img_array))
 #<class 'numpy.ndarray'>
 #st.image(img_array)
