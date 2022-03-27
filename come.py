@@ -29,12 +29,12 @@ st.write(im)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
 
-#img_array = np.array(im)
-#st.write(type(img_array))
+img_array = np.array(im)
+st.write(type(img_array))
 #<class 'numpy.ndarray'>
 #st.image(img_array)
 if src:
-    img = cv2.imread(file) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
+    #img = cv2.imread(file) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
     st.write(type(img))
     img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
