@@ -21,6 +21,9 @@ st.write(os.path.exists(src.name))
 
 im = Image.open(src)
 st.write(im)
+output = io.BytesIO()
+im.save(output,format='JPE')
+
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
