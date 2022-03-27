@@ -21,7 +21,6 @@ st.write(os.path.exists(src.name))
 
 im = Image.open(src)
 f.write(im)
-st.write(f)
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
