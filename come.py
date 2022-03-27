@@ -20,8 +20,8 @@ st.write(type(file))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
 st.write(os.path.exists(src.name))
 
-f =open(file.name,'w')
-f.write(src)
+with open(src.name,'w') as f:
+    f.write(src)
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
