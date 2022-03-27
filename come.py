@@ -20,7 +20,7 @@ st.write(type(file))
 st.write(os.path.exists(src.name))
 
 with open(src.name,'w') as f:
-    img = open(sec.name,'wb').read()
+    img = open(sec.name,'rb').read()
     f.write(img)
     st.write(f)
 #im =Image.open(src)
