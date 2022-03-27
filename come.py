@@ -13,29 +13,25 @@ st.header('circle counter')
 st.write('内容：こちらに画像を貼り付ける事で、画像内の粒の数を数えます。')
 src = st.file_uploader('写真貼り付け場所')
 
-file = os.path.abspath(src.name)
-st.write(file)
-st.write(src.name)
-st.write(type(file))
+#file = os.path.abspath(src.name)
+#st.write(file)
+#st.write(src.name)
+#st.write(type(file))
 #<class 'streamlit.uploaded_file_manager.UploadedFile'>
-st.write(os.path.exists(src.name))
 
-im = Image.open(src)
-st.write(im)
-#output = io.BytesIO()
-#im.save(output,format='JPG')
+#st.write(os.path.exists(src.name))
 
 #im =Image.open(src)
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
 
-img = np.array(im)
-st.write(type(img))
+
 #<class 'numpy.ndarray'>
 #st.image(img_array)
 if src:
+    im = Image.open(src)
+    img = np.array(im)
     #img = cv2.imread(file) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
-    st.write(type(img))
     #img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     ret, bin_img = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
