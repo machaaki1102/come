@@ -36,8 +36,8 @@ st.write(type(img))
 if src:
     #img = cv2.imread(file) #第一引数は、ファイルパス /app/comeにいてfilenameだけで呼び出せる
     st.write(type(img))
-    img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-    gray = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)
+    #img2 = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+    gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     ret, bin_img = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(5,5))
     cv2.morphologyEx(bin_img,cv2.MORPH_OPEN,kernel,iterations=2)
@@ -64,7 +64,7 @@ if src:
         )
         coins.append(contours[0])
 # 輪郭を描画する。
-    cv2.drawContours(img2, coins, -1, color=(0, 0, 255), thickness=2)
-    st.image(img2)
+    cv2.drawContours(img, coins, -1, color=(0, 0, 255), thickness=2)
+    st.image(img)
     con = len(coins)
     st.write(f'粒数は、{con}です。')
