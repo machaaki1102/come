@@ -25,7 +25,6 @@ src = st.file_uploader('写真貼り付け場所')
 #st.write(type(im))
 #<class 'PIL.JpegImagePlugin.JpegImageFile'>
 
-
 #<class 'numpy.ndarray'>
 #st.image(img_array)
 if src:
